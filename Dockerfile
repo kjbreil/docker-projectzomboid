@@ -9,7 +9,7 @@ RUN bash linuxgsm.sh pzserver && \
   /home/server/pzserver auto-install && \
   /home/server/pzserver update
 
-EXPOSE 28015/tcp 28015/udp 28016/tcp 28016/udp
+EXPOSE 8766/udp 8767/udp 27015/tcp 16261/udp 16261/tcp 16262-16272/tcp
 
 COPY entrypoint.sh entrypoint.sh
 
