@@ -23,7 +23,7 @@ function install() {
 
 
 function start() {
-  if [ ! -d ./serverfiles ]; then
+  if [ ! -d ./Zomboid ]; then
     install
   else
      # trap exit signals
@@ -36,6 +36,7 @@ function start() {
 
 # stop the planet zombiod server
 function stop() {
+  echo "Stopping Server"
   ./pzserver stop
   # just to be sure wait 10 seconds
   sleep 10
@@ -63,6 +64,9 @@ function running() {
 if [ "$1" != "" ]; then
   if [ "$1" == "start" ]; then
     start
+  fi
+  if [ "$1" == "shell" ]; then
+    /bin/bash
   fi
 else
   install
