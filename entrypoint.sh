@@ -3,9 +3,9 @@
 
 printf "# Each time the docker starts these will be overwritten\n\n" > /home/server/lgsm/config-lgsm/pzserver/common.cfg
 
-printf "ip="%s"\n" "$IP" >> /home/server/lgsm/config-lgsm/rustserver/rustserver.cfg
-printf "adminpassword="%s"\n" "$ADMIN_PASSWORD" >> /home/server/lgsm/config-lgsm/rustserver/rustserver.cfg
-printf "servicename="%s"\n" "$SERVER_NAME" >> /home/server/lgsm/config-lgsm/rustserver/rustserver.cfg
+printf "ip="%s"\n" "$IP" >> /home/server/lgsm/config-lgsm/pzserver/common.cfg
+printf "adminpassword="%s"\n" "$ADMIN_PASSWORD" >> /home/server/lgsm/config-lgsm/pzserver/common.cfg
+printf "servicename="%s"\n" "$SERVER_NAME" >> /home/server/lgsm/config-lgsm/pzserver/common.cfg
 
 
 # Install is actuall install or update
