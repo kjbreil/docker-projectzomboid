@@ -4,6 +4,10 @@ LABEL maintainer="Kjell Breiland <kjell.breiland@gmail.com>"
 
 ENV TERM xterm
 
+ENV IP "0.0.0.0"
+ENV ADMIN_PASSWORD "iamstupid"
+ENV SERVER_NAME "pz-server"
+
 RUN bash linuxgsm.sh pzserver && \
   /home/server/pzserver update-lgsm && \
   /home/server/pzserver auto-install && \
